@@ -9,7 +9,7 @@ import { Table,
     TableContainer, } from '@chakra-ui/react'
 
 
-
+    import TransactionItem from './Transactionitem';
 
 function  Tablebox({}) {
     return (
