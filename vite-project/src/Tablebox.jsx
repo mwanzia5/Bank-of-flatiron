@@ -11,32 +11,36 @@ import { Table,
 
     import TransactionItem from './Transactionitem';
 
-function  Tablebox({}) {
+const  Tablebox = ({ transactions, handleDelete}) => {
     return (
+<TableContainer>
+			<Table variant="simple">
+				<TableCaption>All my transactions</TableCaption>
+
+				<Thead>
+					<Tr>
+						<Th>Date</Th>
+						<Th>Description</Th>
+						<Th>Category</Th>
+						<Th isNumeric>Amount</Th>
+						<Th>Actions</Th>
+					</Tr>
+				</Thead>
+
+				<Tbody>
+					{transactions.map((transaction) => (
+						<TransactionItem
+							key={transaction.id}
+							{...transaction}
+							handleDelete={handleDelete}
+						/>
+					))}
+				</Tbody>
+			</Table>
+		</TableContainer>
+    )
+}
 
 
-    <TableContainer>
-  <Table variant='simple'>
-    <TableCaption>Bank of Flatiron</TableCaption>
-    <Thead>
-      <Tr>
-        <Th>date</Th>
-        <Th>description</Th>
-        <Th> Category</Th>
-        <Th isNumeric> amount</Th>
-      </Tr>
-    </Thead>
-    <Tbody>
-      <Tr>
-        <Td></Td>
-        <Td></Td>
-        <Td ></Td>
-        <Td></Td>
-      </Tr>
-     </Tbody>
-  </Table>
-</TableContainer>
-         );
-    }
-export default Tablebox;
+   export default Tablebox;
  
