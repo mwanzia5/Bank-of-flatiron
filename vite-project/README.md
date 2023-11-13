@@ -1,8 +1,12 @@
-# React + Vite
+# code-challange-bank-of-flatiron
+ 1.transactions of items
+ 2.items with their prices and quantities in a list
+ 3.a function that takes an item name as input, returns the price of that item if it exists or none otherwise
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ # requirements
+ 1.Node js
+ 2.Npm
+ 3.vs code
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# author
+1.shem Masoo
